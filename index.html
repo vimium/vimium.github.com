@@ -29,10 +29,16 @@
     vertical-align:bottom;
   }
   td#logo {
-    width: 406px;
+  }
+  div#logoContainer {
+    width: 405px;
+    height: 61px;
+    position: relative;
   }
   td#logo img {
-    margin-left: -67px;
+    position: absolute;
+    /* Not using a negative margin because IE7 does not support it. */
+    left: -67px;
   }
   td#github {
     width: 186px;
@@ -57,7 +63,7 @@
     position:absolute;
     top:0;
     right:2px;
-    width:190px;
+    width:191px;
     height: 41px;
     background-color: #EFEFEF;
     border:2px solid #dadada;
@@ -103,7 +109,7 @@
     padding: 0 1px;
     vertical-align: top;
   }
-  .keystrokes td:first-of-type {
+  .keystrokes .keys {
     text-align:right;
     font-weight:bold;
     color:#2f508e;
@@ -142,7 +148,7 @@
   <div id="floating-panel"></div>
   <table id="header">
     <tr>
-      <td id="logo"><img src="vimium_logo.png" /></td>
+      <td id="logo"><div id="logoContainer"><img src="vimium_logo.png" /></div></td>
       <td id="github"><a href="http://github.com/philc/vimium">View source on GitHub</a></td>
     </tr>
   </table>
@@ -192,51 +198,51 @@
     <div class="column">
       <table class="keystrokes">
         <tr><td></td><td></td><td class="title">Navigating history</td></tr>
-        <tr><td>H</td><td>:</td><td>Go back in history</td></tr>
-        <tr><td>L</td><td>:</td><td>Go forward in history</td></tr>
+        <tr><td class="keys">H</td><td>:</td><td>Go back in history</td></tr>
+        <tr><td class="keys">L</td><td>:</td><td>Go forward in history</td></tr>
         <tr><td></td><td></td><td class="title">Manipulating tabs</td></tr>
-        <tr><td>K, gt</td><td>:</td><td>Go one tab right</td></tr>
-        <tr><td>J, gT</td><td>:</td><td>Go one tab left</td></tr>
-        <tr><td>t</td><td>:</td><td>Create new tab</td></tr>
-        <tr><td>d</td><td>:</td><td>Close current tab</td></tr>
-        <tr><td>u</td><td>:</td><td>Restore closed tab</td></tr>
+        <tr><td class="keys">K, gt</td><td>:</td><td>Go one tab right</td></tr>
+        <tr><td class="keys">J, gT</td><td>:</td><td>Go one tab left</td></tr>
+        <tr><td class="keys">t</td><td>:</td><td>Create new tab</td></tr>
+        <tr><td class="keys">d</td><td>:</td><td>Close current tab</td></tr>
+        <tr><td class="keys">u</td><td>:</td><td>Restore closed tab</td></tr>
       </table>
     </div>
 
     <div class="column">
       <table class="keystrokes">
         <tr><td></td><td></td><td class="title">Navigating the page</td></tr>
-        <tr><td>j, &lt;c-e&gt;</td><td>:</td><td>Scroll down</td></tr>
-        <tr><td>k, &lt;c-y&gt;</td><td>:</td><td>Scroll up</td></tr>
-        <tr><td>h</td><td>:</td><td>Scroll left</td></tr>
-        <tr><td>l</td><td>:</td><td>Scroll right</td></tr>
-        <tr><td>gg</td><td>:</td><td>Scroll to the top of the page</td></tr>
-        <tr><td>G</td><td>:</td><td>Scroll to the bottom of the page</td></tr>
+        <tr><td class="keys">j, &lt;c-e&gt;</td><td>:</td><td>Scroll down</td></tr>
+        <tr><td class="keys">k, &lt;c-y&gt;</td><td>:</td><td>Scroll up</td></tr>
+        <tr><td class="keys">h</td><td>:</td><td>Scroll left</td></tr>
+        <tr><td class="keys">l</td><td>:</td><td>Scroll right</td></tr>
+        <tr><td class="keys">gg</td><td>:</td><td>Scroll to the top of the page</td></tr>
+        <tr><td class="keys">G</td><td>:</td><td>Scroll to the bottom of the page</td></tr>
       </table>
     </div>
 
     <div class="column">
       <table class="keystrokes">
         <tr><td></td><td>&nbsp;</td><td></td></tr>
-        <tr><td>&lt;c-u&gt;</td><td>:</td><td>Scroll a page up</td></tr>
-        <tr><td>&lt;c-d&gt;</td><td>:</td><td>Scroll a page down</td></tr>
-        <tr><td>&lt;c-f&gt;</td><td>:</td><td>Scroll a full page down</td></tr>
-        <tr><td>N</td><td>:</td><td>Cycle backward to the previous find match</td></tr>
-        <tr><td>r</td><td>:</td><td>Reload the page</td></tr>
-        <tr><td>zi</td><td>:</td><td>Zoom in</td></tr>
-        <tr><td>zo</td><td>:</td><td>Zoom out</td></tr>
+        <tr><td class="keys">&lt;c-u&gt;</td><td>:</td><td>Scroll a page up</td></tr>
+        <tr><td class="keys">&lt;c-d&gt;</td><td>:</td><td>Scroll a page down</td></tr>
+        <tr><td class="keys">&lt;c-f&gt;</td><td>:</td><td>Scroll a full page down</td></tr>
+        <tr><td class="keys">N</td><td>:</td><td>Cycle backward to the previous find match</td></tr>
+        <tr><td class="keys">r</td><td>:</td><td>Reload the page</td></tr>
+        <tr><td class="keys">zi</td><td>:</td><td>Zoom in</td></tr>
+        <tr><td class="keys">zo</td><td>:</td><td>Zoom out</td></tr>
       </table>
     </div>
 
     <div class="column">
       <table class="keystrokes">
         <tr><td></td><td>&nbsp;</td><td></td></tr>
-        <tr><td>gf</td><td>:</td><td>View page source</td></tr>
-        <tr><td>f</td><td>:</td><td>Enter link hints mode to open links in current tab</td></tr>
-        <tr><td>F</td><td>:</td><td>Enter link hints mode to open links in new tab</td></tr>
-        <tr><td>/</td><td>:</td><td>Enter find mode</td></tr>
-        <tr><td>yy</td><td>:</td><td>Copy the current URL to the clipboard</td></tr>
-        <tr><td>i</td><td>:</td><td>Enter insert mode</td></tr>
+        <tr><td class="keys">gf</td><td>:</td><td>View page source</td></tr>
+        <tr><td class="keys">f</td><td>:</td><td>Enter link hints mode to open links in current tab</td></tr>
+        <tr><td class="keys">F</td><td>:</td><td>Enter link hints mode to open links in new tab</td></tr>
+        <tr><td class="keys">/</td><td>:</td><td>Enter find mode</td></tr>
+        <tr><td class="keys">yy</td><td>:</td><td>Copy the current URL to the clipboard</td></tr>
+        <tr><td class="keys">i</td><td>:</td><td>Enter insert mode</td></tr>
       </table>
     </div>
 
