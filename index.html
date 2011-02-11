@@ -215,16 +215,16 @@
         <tr><td class="keys">K, gt</td><td>:</td><td>Go one tab right</td></tr>
         <tr><td class="keys">J, gT</td><td>:</td><td>Go one tab left</td></tr>
         <tr><td class="keys">t</td><td>:</td><td>Create new tab</td></tr>
-        <tr><td class="keys">d</td><td>:</td><td>Close current tab</td></tr>
-        <tr><td class="keys">u</td><td>:</td><td>Restore closed tab</td></tr>
+        <tr><td class="keys">x</td><td>:</td><td>Close current tab</td></tr>
+        <tr><td class="keys">X</td><td>:</td><td>Restore closed tab</td></tr>
       </table>
     </div>
 
     <div class="column">
       <table class="keystrokes">
         <tr><td></td><td></td><td class="title">Navigating the page</td></tr>
-        <tr><td class="keys">j, &lt;c-e&gt;</td><td>:</td><td>Scroll down</td></tr>
-        <tr><td class="keys">k, &lt;c-y&gt;</td><td>:</td><td>Scroll up</td></tr>
+        <tr><td class="keys">j</td><td>:</td><td>Scroll down</td></tr>
+        <tr><td class="keys">k</td><td>:</td><td>Scroll up</td></tr>
         <tr><td class="keys">h</td><td>:</td><td>Scroll left</td></tr>
         <tr><td class="keys">l</td><td>:</td><td>Scroll right</td></tr>
         <tr><td class="keys">gg</td><td>:</td><td>Scroll to the top of the page</td></tr>
@@ -235,33 +235,54 @@
     <div class="column">
       <table class="keystrokes">
         <tr><td></td><td>&nbsp;</td><td></td></tr>
-        <tr><td class="keys">&lt;c-u&gt;</td><td>:</td><td>Scroll a page up</td></tr>
-        <tr><td class="keys">&lt;c-d&gt;</td><td>:</td><td>Scroll a page down</td></tr>
+        <tr><td class="keys">u, &lt;c-u&gt;</td><td>:</td><td>Scroll a half page up</td></tr>
+        <tr><td class="keys">d, &lt;c-d&gt;</td><td>:</td><td>Scroll a half page down</td></tr>
         <tr><td class="keys">&lt;c-f&gt;</td><td>:</td><td>Scroll a full page down</td></tr>
         <tr><td class="keys">&lt;c-b&gt;</td><td>:</td><td>Scroll a full page up</td></tr>
-        <tr><td class="keys">N</td><td>:</td><td>Cycle backward to the previous find match</td></tr>
+        <tr><td class="keys">f</td><td>:</td><td>Enter link hints mode to open links in current tab</td></tr>
+        <tr><td class="keys">F</td><td>:</td><td>Enter link hints mode to open links in new tab</td></tr>
         <tr><td class="keys">r</td><td>:</td><td>Reload the page</td></tr>
-        <tr><td class="keys">zi</td><td>:</td><td>Zoom in</td></tr>
-        <tr><td class="keys">zo</td><td>:</td><td>Zoom out</td></tr>
+        <tr><td class="keys">gs</td><td>:</td><td>View page source</td></tr>
       </table>
     </div>
 
     <div class="column">
       <table class="keystrokes">
         <tr><td></td><td>&nbsp;</td><td></td></tr>
-        <tr><td class="keys">gf</td><td>:</td><td>View page source</td></tr>
-        <tr><td class="keys">f</td><td>:</td><td>Enter link hints mode to open links in current tab</td></tr>
-        <tr><td class="keys">F</td><td>:</td><td>Enter link hints mode to open links in new tab</td></tr>
+        <tr><td class="keys">zi</td><td>:</td><td>Zoom in</td></tr>
+        <tr><td class="keys">zo</td><td>:</td><td>Zoom out</td></tr>
         <tr><td class="keys">/</td><td>:</td><td>Enter find mode</td></tr>
+        <tr><td class="keys">n</td><td>:</td><td>Cycle forward to the next find match</td></tr>
+        <tr><td class="keys">N</td><td>:</td><td>Cycle backward to the previous find match</td></tr>
         <tr><td class="keys">yy</td><td>:</td><td>Copy the current URL to the clipboard</td></tr>
-        <tr><td class="keys">gu</td><td>:</td><td>Go up the URL hierarchy</td></tr>
+        <tr><td class="keys">gf</td><td>:</td><td>Cycle forward to the next frame</td></tr>
         <tr><td class="keys">i</td><td>:</td><td>Enter insert mode</td></tr>
       </table>
     </div>
 
+
+    For a full list of keystrokes, see the <a href="https://github.com/philc/vimium/blob/master/README.markdown">README</a>.
+
     <br clear="both"/>
     <br clear="both"/>
     <h2>Recent releases</h2>
+
+    <div class="versionTitle">
+      <span class="date">02/10/2011</span>
+      <span class="version">1.22</span>
+    </div>
+
+    <ul>
+      <li>Some sites are now excluded by default.</li>
+      <li>View source (gs) now opens in a new tab.</li>
+      <li>Support for browsing paginated sites using ]] and [[ to go forward and backward respectively.</li>
+      <li>z0 will reset the zoom level for the current page.</li>
+      <li>Many of the less-used commands are now marked as "advanced" and hidden in the help dialog by default, so that the core command set is more focused and approachable.</li>
+      <li>Improvements to link hinting.</li>
+      <li>Bugfixes.</li>
+    </ul>
+
+    <br/>
 
     <div class="versionTitle">
       <span class="date">10/24/2010</span>
@@ -276,33 +297,6 @@
       <li>Frame support.</li>
       <li>More robust support for non-US keyboard layouts.</li>
       <li>Numerous bug fixes.</li>
-    </ul>
-
-    <br/>
-
-    <div class="versionTitle">
-      <span class="date">06/29/2010</span>
-      <span class="version">1.19</span>
-    </div>
-
-    <ul>
-      <li>A critical bug fix for development channel Chromium.</li>
-      <li>Vimium icons for the Chrome extensions panel and other places.</li>
-    </ul>
-
-    <br/>
-
-    <div class="versionTitle">
-      <span class="date">06/22/2010</span>
-      <span class="version">1.18</span>
-    </div>
-
-    <ul>
-      <li>Vimium now runs on pages with file:/// and ftp:///</li>
-      <li>The Options page is now linked from the Help dialog.</li>
-      <li>Arrow keys and function keys can now be mapped using &lt;left&gt;, &lt;right&gt;, &lt;up&gt;, &lt;down&gt;, &lt;f1&gt;, &lt;f2&gt;, etc. in the mappings interface.</li>
-      <li>There is a new command goUp (mapped to gu by default) that will go up one level in the URL hierarchy. For example: from http://vimium.github.com/foo/bar to http://vimium.github.com/foo. At the moment, goUp does not support command repetition.</li>
-      <li>Bug fixes and optimizations.</li>
     </ul>
   </div>
 
