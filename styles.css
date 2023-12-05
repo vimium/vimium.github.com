@@ -1,0 +1,153 @@
+* { padding: 0; margin: 0;}
+
+body {
+  width:800px;
+  padding:0;
+  margin:0 auto;
+  font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+  background:white url(background.png) top center no-repeat;
+  line-height:150%;
+  font-size:14px;
+  position:relative;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 12px;
+  color: #696969;
+}
+
+a { color: #5173A7; }
+
+a:hover { color: black; }
+
+table#header {
+  padding-top: 30px;
+  height:60px;
+  vertical-align:bottom;
+}
+
+div#logoContainer {
+  width: 405px;
+  height: 61px;
+  position: relative;
+}
+
+td#logo img {
+  position: absolute;
+  /* Not using a negative margin because IE7 does not support it. */
+  left: -67px;
+}
+
+td#github {
+  width: 186px;
+}
+
+td#github a {
+  display: block;
+  width: 192px;
+  height: 30px;
+  padding-top:10px;
+  text-align: center;
+  background-color: #EFEFEF;
+  border:2px solid #dadada;
+  border-right: 0;
+  font-weight:bold;
+}
+
+td#github a:hover {
+  background-color:#5173A7;
+  color:white;
+  border-color:#405B84;
+}
+
+div#floating-panel {
+  position:absolute;
+  top:0;
+  right:2px;
+  width:191px;
+  height: 41px;
+  background-color: #EFEFEF;
+  border:2px solid #dadada;
+  border-left:0;
+  border-top: 0;
+}
+
+p {
+  width:616px;
+  margin:10px 0 18px 0;
+}
+
+td#features {
+  width:225px;
+  padding-right:10px;
+  vertical-align:top;
+}
+
+td#features ul li {
+  margin:4px 0;
+}
+
+#video {
+  width: 560px;
+  height: 320px;
+  background-color: #dddddd;
+  border:2px solid #ccc;
+}
+
+#install-links a {
+  font-weight: bold;
+}
+
+div#bottom-content {
+  margin-top:20px;
+  position:relative;
+}
+
+.column {
+  width: 25%;
+  float:left;
+}
+
+.keystrokes td {
+  font-size:12px;
+  padding: 0 1px;
+  vertical-align: top;
+}
+
+.keystrokes .keys {
+  text-align:right;
+  font-weight:bold;
+  color:#2f508e;
+  white-space:nowrap;
+}
+
+.keystrokes .title {
+  font-weight:bold;
+  padding-top:3px;
+  white-space:nowrap;
+}
+
+#footer {
+  clear: both;
+  text-align: center;
+  color: #333;
+  font-size: 12px;
+  margin:20px 0;
+}
+
+span.version {
+  position: absolute;
+  width:100px;
+  text-align:right;
+  left:-110px;
+  font-weight:bold;
+}
+
+div.versionTitle {
+  margin-bottom:4px;
+}
+
+div.versionTitle .date {
+  color:#444;
+}
