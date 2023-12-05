@@ -1,19 +1,49 @@
-* { padding: 0; margin: 0;}
-
 body {
-  width:800px;
-  padding:0;
-  margin:0 auto;
+  padding: 10px;
+  margin: 0 auto;
   font-family: "Helvetica Neue", "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
-  background:white url(background.png) top center no-repeat;
-  line-height:150%;
-  font-size:14px;
-  position:relative;
+  font-family: sans-serif;
+  max-width: 900px;
+  line-height: 1.5;
+}
+
+header {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+  /* TODO(philc): Use flex layout to vertically center this. */
+  margin-top: 5px;
+  line-height: 100%;
+}
+
+header img#logo {
+  margin-right: 16px;
+  width: 60px;
+}
+
+header img#github {
+  width: 40px;
+}
+
+header #logo-text {
+  flex-grow: 1;
 }
 
 h2 {
-  margin: 0;
-  margin-bottom: 12px;
+  margin: 16px 0;
+  color: #555;
+}
+
+h3 {
   color: #696969;
 }
 
@@ -21,133 +51,78 @@ a { color: #5173A7; }
 
 a:hover { color: black; }
 
-table#header {
-  padding-top: 30px;
-  height:60px;
-  vertical-align:bottom;
-}
-
-div#logoContainer {
-  width: 405px;
-  height: 61px;
-  position: relative;
-}
-
-td#logo img {
-  position: absolute;
-  /* Not using a negative margin because IE7 does not support it. */
-  left: -67px;
-}
-
-td#github {
-  width: 186px;
-}
-
-td#github a {
-  display: block;
-  width: 192px;
-  height: 30px;
-  padding-top:10px;
-  text-align: center;
-  background-color: #EFEFEF;
-  border:2px solid #dadada;
-  border-right: 0;
-  font-weight:bold;
-}
-
-td#github a:hover {
-  background-color:#5173A7;
-  color:white;
-  border-color:#405B84;
-}
-
-div#floating-panel {
-  position:absolute;
-  top:0;
-  right:2px;
-  width:191px;
-  height: 41px;
-  background-color: #EFEFEF;
-  border:2px solid #dadada;
-  border-left:0;
-  border-top: 0;
-}
-
-p {
-  width:616px;
-  margin:10px 0 18px 0;
-}
-
-td#features {
-  width:225px;
-  padding-right:10px;
-  vertical-align:top;
-}
-
-td#features ul li {
-  margin:4px 0;
-}
-
 #video {
-  width: 560px;
-  height: 320px;
-  background-color: #dddddd;
-  border:2px solid #ccc;
+  /* Prevent horizontal scrolling on phones. */
+  overflow-x: hidden;
+}
+
+@media (min-width: 700px) {
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  #feature-list {
+    padding-right: 16px;
+  }
+
+  #video {
+    float: right;
+    padding-left: 8px;
+  }
+
+  #keyboard-shortcuts {
+    display: flex;
+  }
 }
 
 #install-links a {
   font-weight: bold;
+  display: block;
+  margin: 5px 0;
 }
 
-div#bottom-content {
-  margin-top:20px;
-  position:relative;
+h2.keyboard-shortcuts {
+  margin-bottom: 0;
 }
 
-.column {
-  width: 25%;
-  float:left;
+#keyboard-shortcuts ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.keystrokes td {
-  font-size:12px;
-  padding: 0 1px;
-  vertical-align: top;
+#keyboard-shortcuts span {
+  float: left;
+  width: 5ch;
+  font-weight: bold;
 }
 
-.keystrokes .keys {
-  text-align:right;
-  font-weight:bold;
-  color:#2f508e;
-  white-space:nowrap;
+footer {
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
-.keystrokes .title {
-  font-weight:bold;
-  padding-top:3px;
-  white-space:nowrap;
-}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1E1F21;
+    color: #EEEFF1;
+  }
+  a {
+    color: #BAD7FF;
+  }
+  img#github {
+    filter: invert(1);
+  }
 
-#footer {
-  clear: both;
-  text-align: center;
-  color: #333;
-  font-size: 12px;
-  margin:20px 0;
-}
+  h2 {
+    color: #bbb;
+  }
 
-span.version {
-  position: absolute;
-  width:100px;
-  text-align:right;
-  left:-110px;
-  font-weight:bold;
-}
+  h3 {
+    color: #999;
+  }
+  a:hover { color: black; }
 
-div.versionTitle {
-  margin-bottom:4px;
-}
-
-div.versionTitle .date {
-  color:#444;
 }

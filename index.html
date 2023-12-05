@@ -4,134 +4,147 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./vimium_logo.svg">
   <title>Vimium - The Hacker's Browser</title>
 </head>
 
 <body>
 
-<body>
-  <div id="floating-panel"></div>
-  <table id="header">
-    <tr>
-      <td id="logo"><div id="logoContainer"><img src="vimium_logo.png" /></div></td>
-      <td id="github"><a href="https://github.com/philc/vimium">View source on GitHub</a></td>
-    </tr>
-  </table>
+  <body>
+    <header>
+      <img id="logo" src="./vimium_logo.svg">
+      <div id="logo-text">
+        <h1>Vimium</h1>
+      </div>
+      <a href="https://www.github.com/philc/vimium"><img id="github" src="./github.svg"></a>
+    </header>
 
-  <p>
-    Vimium is a browser extension which provides keyboard shortcuts for navigation and control in
-    the spirit of the Vim editor. Watch this video to get a feel for how it works:
-  </p>
+    <h2>The Hacker's Browser</h2>
 
-  <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    <p>
+      Vimium is a browser extension which provides keyboard shortcuts for navigation and control in
+      the spirit of the Vim editor. Watch this video to get a feel for how it works:
+    </p>
+
+    <div id="video">
+      <!-- rel=0 and showinfo=0 reduce the amount of player chrome that YouTube displays. -->
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/t67Sn0RGK54?si=JIw6PLFWqS7jx01e?&rel=0&showinfo=0"
+        title="Vimium" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <h2>Features</h2>
+    <ul id="feature-list">
+      <li>Navigate the web without touching the mouse.</li>
+      <li>Use a clever highlighting method to click on links.</li>
+      <li>Customize your keyboard shortcuts.</li>
+      <li>View an in-page help dialog to see your personalized shortcuts.</li>
+    </ul>
+
+    <h2>Install</h2>
+
+    <p id="install-links">
+      Install for your browser:<br />
+      <a
+        href="https://chrome.google.com/extensions/detail/dbepggeogbaibhgnhhndojpepiihcmeb">Chrome</a>
+      <a
+        href="https://microsoftedge.microsoft.com/addons/detail/vimium/djmieaghokpkpjfbpelnlkfgfjapaopa">Edge</a>
+      <a href="https://addons.mozilla.org/en-GB/firefox/addon/vimium-ff/">Firefox</a>
+    </p>
+
+
+    <h2 class="keyboard-shortcuts">Keyboard Shortcuts</h2>
+    <div id="keyboard-shortcuts">
+      <div style="padding-right:2em">
+        <h3>Navigating the page</h3>
+        <ol>
+          <li><span>j</span>Scroll down</li>
+          <li><span>k</span>Scroll up</li>
+          <li><span>gg</span>Scroll to the top of the page</li>
+          <li><span>G</span>Scroll to the bottom of the page</li>
+          <li><span>d</span>Scroll a half page down</li>
+          <li><span>u</span>Scroll a half page up</li>
+          <li><span>h</span>Scroll left</li>
+          <li><span>l</span>Scroll right</li>
+          <li><span>r</span>Reload the page</li>
+          <li><span>yy</span>Copy the current URL to the clipboard</li>
+          <li><span>p</span>Open the clipboard&#39;s URL in the current tab</li>
+          <li><span>P</span>Open the clipboard&#39;s URL in a new tab</li>
+          <li><span>i</span>Enter insert mode</li>
+          <li><span>v</span>Enter visual mode</li>
+          <li><span>gi</span>Focus the first text input on the page</li>
+          <li><span>f</span>Open a link in the current tab</li>
+          <li><span>F</span>Open a link in a new tab</li>
+          <li><span>gf</span>Select the next frame on the page</li>
+          <li><span>gF</span>Select the page&#39;s main/top frame</li>
+        </ol>
+        <h3>Using find</h3>
+        <ol>
+          <li><span>/</span>Enter find mode</li>
+          <li><span>n</span>Cycle forward to the next find match</li>
+          <li><span>N</span>Cycle backward to the previous find match</li>
+        </ol>
+      </div>
+      <div>
+        <h3>Using the vomnibar</h3>
+        <ol>
+          <li><span>o</span>Open URL, bookmark or history entry</li>
+          <li><span>O</span>Open URL, bookmark or history entry in a new tab</li>
+          <li><span>b</span>Open a bookmark</li>
+          <li><span>B</span>Open a bookmark in a new tab</li>
+          <li><span>T</span>Search through your open tabs</li>
+        </ol>
+        <h3>Navigating history</h3>
+        <ol>
+          <li><span>H</span>Go back in history</li>
+          <li><span>L</span>Go forward in history</li>
+        </ol>
+        <h3>Manipulating tabs</h3>
+        <ol>
+          <li><span>t</span>Create new tab</li>
+          <li><span>J</span>Go one tab left</li>
+          <li><span>K</span>Go one tab right</li>
+          <li><span>g0</span>Go to the first tab</li>
+          <li><span>g$</span>Go to the last tab</li>
+          <li><span>yt</span>Duplicate current tab</li>
+          <li><span>x</span>Close current tab</li>
+          <li><span>X</span>Restore closed tab</li>
+        </ol>
+        <h3>Miscellaneous</h3>
+        <ol>
+          <li><span>?</span>Show help</li>
+        </ol>
+      </div>
+    </div>
+
+    <h2>More</h2>
+
+    <p>
+      For the latest release notes, more advanced shortcuts, and how to create custom keybindings,
+      see the
+      <strong><a href="https://github.com/philc/vimium/blob/master/README.md">README</a></strong>.
+    </p>
+
+    <footer>
+      &copy; <a href="https://www.philcrosby.com">Phil Crosby</a>
+      and <a href="https://ilya.sukhar.com">Ilya Sukhar</a>. Available under the
+      <a href="https://github.com/philc/vimium/blob/master/MIT-LICENSE.txt">MIT license</a>.
+    </footer>
+
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost +
+        "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
     </script>
     <script type="text/javascript">
-    try {
-    var pageTracker = _gat._getTracker("UA-15849552-1");
-    pageTracker._trackPageview();
-    } catch(err) {}
-  </script>
+      try {
+        var pageTracker = _gat._getTracker("UA-15849552-1");
+        pageTracker._trackPageview();
+      } catch (err) {}
+    </script>
 
-  <table>
-    <tr>
-      <td id="features">
-        <h2>Features</h2>
-        <ul>
-          <li>Helps you navigate the web without touching the mouse.</li>
-          <li>Uses a clever highlighting method to navigate using links.</li>
-          <li>Customizable keyboard shortcuts</li>
-          <li>Has an in-page help dialog to remind you of your personalized shortcuts.</li>
-        </ul>
-        <br/>
-        <h2>Install</h2>
-        <p id="install-links">
-          Install for your browser<br/>
-          <a href="https://chrome.google.com/extensions/detail/dbepggeogbaibhgnhhndojpepiihcmeb">Chrome</a><br/>
-          <a href="https://microsoftedge.microsoft.com/addons/detail/vimium/djmieaghokpkpjfbpelnlkfgfjapaopa">Edge</a><br/>
-          <a href="https://addons.mozilla.org/en-GB/firefox/addon/vimium-ff/">Firefox</a>
-        </p>
-      </td>
-      <td>
-        <div id="video">
-          <iframe width="560" height="320"
-            src="//www.youtube.com/embed/t67Sn0RGK54?html5=1&rel=0&showinfo=0&showinfo=0&color=white"
-            frameborder="0" allowfullscreen></iframe>
-        </div>
-      </td>
-    </tr>
-  </table>
+  </body>
 
-  <div id="bottom-content">
-    <h2 style="margin-bottom:8px">Keyboard shortcuts</h2>
-
-    <div class="column">
-      <table class="keystrokes">
-        <tr><td></td><td></td><td class="title">Navigating history</td></tr>
-        <tr><td class="keys">H</td><td>:</td><td>Go back in history</td></tr>
-        <tr><td class="keys">L</td><td>:</td><td>Go forward in history</td></tr>
-        <tr><td></td><td></td><td class="title">Manipulating tabs</td></tr>
-        <tr><td class="keys">K, gt</td><td>:</td><td>Go one tab right</td></tr>
-        <tr><td class="keys">J, gT</td><td>:</td><td>Go one tab left</td></tr>
-        <tr><td class="keys">t</td><td>:</td><td>Create new tab</td></tr>
-        <tr><td class="keys">x</td><td>:</td><td>Close current tab</td></tr>
-        <tr><td class="keys">X</td><td>:</td><td>Restore closed tab</td></tr>
-      </table>
-    </div>
-
-    <div class="column">
-      <table class="keystrokes">
-        <tr><td></td><td></td><td class="title">Navigating the page</td></tr>
-        <tr><td class="keys">?</td><td>:</td><td>Show the help dialog</td></tr>
-        <tr><td class="keys">j</td><td>:</td><td>Scroll down</td></tr>
-        <tr><td class="keys">k</td><td>:</td><td>Scroll up</td></tr>
-        <tr><td class="keys">h</td><td>:</td><td>Scroll left</td></tr>
-        <tr><td class="keys">l</td><td>:</td><td>Scroll right</td></tr>
-        <tr><td class="keys">gg</td><td>:</td><td>Scroll to the top of the page</td></tr>
-        <tr><td class="keys">G</td><td>:</td><td>Scroll to the bottom of the page</td></tr>
-      </table>
-    </div>
-
-    <div class="column">
-      <table class="keystrokes">
-        <tr><td></td><td>&nbsp;</td><td></td></tr>
-        <tr><td class="keys">u, &lt;c-u&gt;</td><td>:</td><td>Scroll a half page up</td></tr>
-        <tr><td class="keys">d, &lt;c-d&gt;</td><td>:</td><td>Scroll a half page down</td></tr>
-        <tr><td class="keys">&lt;c-f&gt;</td><td>:</td><td>Scroll a full page down</td></tr>
-        <tr><td class="keys">&lt;c-b&gt;</td><td>:</td><td>Scroll a full page up</td></tr>
-        <tr><td class="keys">f</td><td>:</td><td>Open a link in the current tab</td></tr>
-        <tr><td class="keys">F</td><td>:</td><td>Open a link in a new tab</td></tr>
-        <tr><td class="keys">o</td><td>:</td><td>Open URL, bookmark, or history entry</td></tr>
-        <tr><td class="keys">O</td><td>:</td><td>Open URL, bookmark, or history entry in a new tab</td></tr>
-      </table>
-    </div>
-
-    <div class="column">
-      <table class="keystrokes">
-        <tr><td></td><td>&nbsp;</td><td></td></tr>
-        <tr><td class="keys">r</td><td>:</td><td>Reload the page</td></tr>
-        <tr><td class="keys">gs</td><td>:</td><td>View page source</td></tr>
-        <tr><td class="keys">/</td><td>:</td><td>Enter find mode</td></tr>
-        <tr><td class="keys">n</td><td>:</td><td>Cycle forward to the next find match</td></tr>
-        <tr><td class="keys">N</td><td>:</td><td>Cycle backward to the previous find match</td></tr>
-        <tr><td class="keys">yy</td><td>:</td><td>Copy the current URL to the clipboard</td></tr>
-        <tr><td class="keys">gf</td><td>:</td><td>Cycle focus to the next frame</td></tr>
-        <tr><td class="keys">i</td><td>:</td><td>Enter insert mode</td></tr>
-      </table>
-    </div>
-
-    <br clear="both"/>
-    <br clear="both"/>
-    <h2 style="margin-bottom:8px">More</h2>
-
-    For the latest release notes, more advanced shortcuts, and how to create custom keybindings, see the
-    <strong><a href="https://github.com/philc/vimium/blob/master/README.md">README</a></strong>.
-
-  <div id="footer">
-    &copy; <a href="https://www.philcrosby.com">Phil Crosby</a>
-    and <a href="https://ilya.sukhar.com">Ilya Sukhar</a>. Available under the
-    <a href="https://github.com/philc/vimium/blob/master/MIT-LICENSE.txt">MIT license</a>.
-  </div>
-</body>
 </html>
