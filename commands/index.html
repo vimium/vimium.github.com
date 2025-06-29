@@ -1,0 +1,829 @@
+<!DOCTYPE html><html class="hosted-version"><head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="light dark">
+    <title>Vimium Commands</title>
+    <link rel="stylesheet" type="text/css" href="vimium.css">
+    <link rel="stylesheet" type="text/css" href="key_mappings.css">
+    <link rel="stylesheet" type="text/css" href="command_listing.css">
+
+    
+  <link rel="shortcut icon" href="../vimium_logo.svg"></head>
+
+  <body class="vimium-body">
+    <header>
+      Vimium Commands
+      <a id="github-link" href="https://www.github.com/philc/vimium">
+        <img id="github" src="../github.svg">
+      </a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#navigation">Navigating the page</a></li>
+        <li><a href="#find">Using find</a></li>
+        <li><a href="#history">Navigating history</a></li>
+        <li><a href="#tabs">Manipulating tabs</a></li>
+        <li><a href="#misc">Miscellaneous</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2 id="navigation" data-group="navigation">Navigating the page</h2>
+      <div class="command" data-command="copyCurrentUrl">
+        <h3>
+          <code>copyCurrentUrl</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Copy the current URL to the clipboard</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="enterInsertMode">
+        <h3>
+          <code>enterInsertMode</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Enter insert mode</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="enterVisualLineMode">
+        <h3>
+          <code>enterVisualLineMode</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Enter visual line mode</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="enterVisualMode">
+        <h3>
+          <code>enterVisualMode</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Enter visual mode</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="focusInput">
+        <h3>
+          <code>focusInput</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Focus the first text input on the page</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="goNext">
+        <h3>
+          <code>goNext</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Follow the link labeled next or &gt;</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="goPrevious">
+        <h3>
+          <code>goPrevious</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Follow the link labeled previous or &lt;</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="goToRoot">
+        <h3>
+          <code>goToRoot</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Go to the root of current URL hierarchy</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="goUp">
+        <h3>
+          <code>goUp</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Go up the URL hierarchy</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="LinkHints.activateMode">
+        <h3>
+          <code>LinkHints.activateMode</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Open a link in the current tab</p>
+        <p class="details"></p>
+        <div class="options">
+          <p><strong>Options</strong></p>
+          <ul><li><code>action</code>: one of <code>hover</code>, <code>focus</code>, <code>copy-text</code>. When a link is selected, instead of clicking on the link, perform the specified action.</li></ul>
+        </div>
+      </div>
+    
+      <div class="command" data-command="LinkHints.activateModeToCopyLinkUrl">
+        <h3>
+          <code>LinkHints.activateModeToCopyLinkUrl</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Copy a link URL to the clipboard</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="LinkHints.activateModeToDownloadLink">
+        <h3>
+          <code>LinkHints.activateModeToDownloadLink</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Download link url</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="LinkHints.activateModeToOpenIncognito">
+        <h3>
+          <code>LinkHints.activateModeToOpenIncognito</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Open a link in incognito window</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="LinkHints.activateModeToOpenInNewForegroundTab">
+        <h3>
+          <code>LinkHints.activateModeToOpenInNewForegroundTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Open a link in a new tab &amp; switch to it</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="LinkHints.activateModeToOpenInNewTab">
+        <h3>
+          <code>LinkHints.activateModeToOpenInNewTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Open a link in a new tab</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="LinkHints.activateModeWithQueue">
+        <h3>
+          <code>LinkHints.activateModeWithQueue</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Open multiple links in a new tab</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="mainFrame">
+        <h3>
+          <code>mainFrame</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Select the page's main/top frame</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="Marks.activateCreateMode">
+        <h3>
+          <code>Marks.activateCreateMode</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Create a new mark</p>
+        <p class="details">Do this by typing the key bound to this command, and then a letter. This will set a mark bound to that letter. Lowercase letters are local marks and uppercase letters are global marks.</p>
+        <div class="options">
+          <p><strong>Options</strong></p>
+          <ul><li><code>swap</code>: Swap global and local marks. This option exists because in a browser, global marks are generally more useful than local marks, and so it may be desirable to make lowercase letters represent global marks rather than local marks.</li></ul>
+        </div>
+      </div>
+    
+      <div class="command" data-command="Marks.activateGotoMode">
+        <h3>
+          <code>Marks.activateGotoMode</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Jump to a mark</p>
+        <p class="details"></p>
+        <div class="options">
+          <p><strong>Options</strong></p>
+          <ul><li><code>swap</code>: Swap global and local marks. This option exists because in a browser, global marks are generally more useful than local marks, and so it may be desirable to make lowercase letters represent global marks rather than local marks.</li></ul>
+        </div>
+      </div>
+    
+      <div class="command" data-command="nextFrame">
+        <h3>
+          <code>nextFrame</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Select the next frame on the page</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="openCopiedUrlInCurrentTab">
+        <h3>
+          <code>openCopiedUrlInCurrentTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Open the clipboard's URL in the current tab</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="openCopiedUrlInNewTab">
+        <h3>
+          <code>openCopiedUrlInNewTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Open the clipboard's URL in a new tab</p>
+        <p class="details"></p>
+        <div class="options">
+          <p><strong>Options</strong></p>
+          <ul><li><code>position</code>: Where to place the tab in the tab bar. One of <code>start</code>, <code>before</code>, <code>after</code>, <code>end</code>. <code>after</code> is the default.</li></ul>
+        </div>
+      </div>
+    
+      <div class="command" data-command="passNextKey">
+        <h3>
+          <code>passNextKey</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Pass the next key to the page</p>
+        <p class="details"></p>
+        <div class="options">
+          <p><strong>Options</strong></p>
+          <ul><li><code>normal</code>: Optional. Enter Vimium's normal mode, and ignore any defined pass keys.</li></ul>
+        </div>
+      </div>
+    
+      <div class="command" data-command="reload">
+        <h3>
+          <code>reload</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Reload the page</p>
+        <p class="details"></p>
+        <div class="options">
+          <p><strong>Options</strong></p>
+          <ul><li><code>hard</code>: Perform a hard reload, forcing the browser to bypass its cache.</li></ul>
+        </div>
+      </div>
+    
+      <div class="command" data-command="scrollDown">
+        <h3>
+          <code>scrollDown</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Scroll down</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="scrollFullPageDown">
+        <h3>
+          <code>scrollFullPageDown</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Scroll a full page down</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="scrollFullPageUp">
+        <h3>
+          <code>scrollFullPageUp</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Scroll a full page up</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="scrollLeft">
+        <h3>
+          <code>scrollLeft</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Scroll left</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="scrollPageDown">
+        <h3>
+          <code>scrollPageDown</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Scroll a half page down</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="scrollPageUp">
+        <h3>
+          <code>scrollPageUp</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Scroll a half page up</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="scrollRight">
+        <h3>
+          <code>scrollRight</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Scroll right</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="scrollToBottom">
+        <h3>
+          <code>scrollToBottom</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Scroll to the bottom of the page</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="scrollToLeft">
+        <h3>
+          <code>scrollToLeft</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Scroll all the way to the left</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="scrollToRight">
+        <h3>
+          <code>scrollToRight</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Scroll all the way to the right</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="scrollToTop">
+        <h3>
+          <code>scrollToTop</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Scroll to the top of the page</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="scrollUp">
+        <h3>
+          <code>scrollUp</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Scroll up</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <h2 id="vomnibar" data-group="vomnibar">Using the vomnibar</h2>
+      <div class="command" data-command="Vomnibar.activate">
+        <h3>
+          <code>Vomnibar.activate</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Open URL, bookmark or history entry</p>
+        <p class="details"></p>
+        <div class="options">
+          <p><strong>Options</strong></p>
+          <ul><li><code>query</code>: The text to prefill the Vomnibar with.</li><li><code>keyword</code>: The keyword of a search engine defined in the "Custom search engines" section of the Vimium Options page. The Vomnibar will be scoped to use that search engine.</li></ul>
+        </div>
+      </div>
+    
+      <div class="command" data-command="Vomnibar.activateBookmarks">
+        <h3>
+          <code>Vomnibar.activateBookmarks</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Open a bookmark</p>
+        <p class="details"></p>
+        <div class="options">
+          <p><strong>Options</strong></p>
+          <ul><li><code>query</code>: The text to prefill the Vomnibar with.</li></ul>
+        </div>
+      </div>
+    
+      <div class="command" data-command="Vomnibar.activateBookmarksInNewTab">
+        <h3>
+          <code>Vomnibar.activateBookmarksInNewTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Open a bookmark in a new tab</p>
+        <p class="details"></p>
+        <div class="options">
+          <p><strong>Options</strong></p>
+          <ul><li><code>query</code>: The text to prefill the Vomnibar with.</li></ul>
+        </div>
+      </div>
+    
+      <div class="command" data-command="Vomnibar.activateEditUrl">
+        <h3>
+          <code>Vomnibar.activateEditUrl</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Edit the current URL</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="Vomnibar.activateEditUrlInNewTab">
+        <h3>
+          <code>Vomnibar.activateEditUrlInNewTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Edit the current URL and open in a new tab</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="Vomnibar.activateInNewTab">
+        <h3>
+          <code>Vomnibar.activateInNewTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Open URL, bookmark or history entry in a new tab</p>
+        <p class="details"></p>
+        <div class="options">
+          <p><strong>Options</strong></p>
+          <ul><li><code>query</code>: The text to prefill the Vomnibar with.</li><li><code>keyword</code>: The keyword of a search engine defined in the "Custom search engines" section of the Vimium Options page. The Vomnibar will be scoped to use that search engine.</li></ul>
+        </div>
+      </div>
+    
+      <div class="command" data-command="Vomnibar.activateTabSelection">
+        <h3>
+          <code>Vomnibar.activateTabSelection</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Search through your open tabs</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <h2 id="find" data-group="find">Using find</h2>
+      <div class="command" data-command="enterFindMode">
+        <h3>
+          <code>enterFindMode</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Enter find mode.</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="findSelected">
+        <h3>
+          <code>findSelected</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Find the selected text</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="findSelectedBackwards">
+        <h3>
+          <code>findSelectedBackwards</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Find the selected text, searching backwards</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="performBackwardsFind">
+        <h3>
+          <code>performBackwardsFind</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Cycle backward to the previous find match</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="performFind">
+        <h3>
+          <code>performFind</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Cycle forward to the next find match</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <h2 id="history" data-group="history">Navigating history</h2>
+      <div class="command" data-command="goBack">
+        <h3>
+          <code>goBack</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Go back in history</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="goForward">
+        <h3>
+          <code>goForward</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Go forward in history</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <h2 id="tabs" data-group="tabs">Manipulating tabs</h2>
+      <div class="command" data-command="closeOtherTabs">
+        <h3>
+          <code>closeOtherTabs</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Close all other tabs</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="closeTabsOnLeft">
+        <h3>
+          <code>closeTabsOnLeft</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Close tabs on the left</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="closeTabsOnRight">
+        <h3>
+          <code>closeTabsOnRight</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Close tabs on the right</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="createTab">
+        <h3>
+          <code>createTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Create new tab</p>
+        <p class="details"></p>
+        <div class="options">
+          <p><strong>Options</strong></p>
+          <ul><li><code>(any url)</code>: Open this URL, rather than the browser's new tab page. E.g.: <code>map X createTab https://example.com</code></li><li><code>window</code>: Create the tab in a new window</li><li><code>incognito</code>: Create the tab in an incognito window</li><li><code>position</code>: Where to place the tab in the tab bar. One of <code>start</code>, <code>before</code>, <code>after</code>, <code>end</code>. <code>after</code> is the default.</li></ul>
+        </div>
+      </div>
+    
+      <div class="command" data-command="duplicateTab">
+        <h3>
+          <code>duplicateTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Duplicate current tab</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="firstTab">
+        <h3>
+          <code>firstTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Go to the first tab</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="lastTab">
+        <h3>
+          <code>lastTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Go to the last tab</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="moveTabLeft">
+        <h3>
+          <code>moveTabLeft</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Move tab to the left</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="moveTabRight">
+        <h3>
+          <code>moveTabRight</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Move tab to the right</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="moveTabToNewWindow">
+        <h3>
+          <code>moveTabToNewWindow</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Move tab to new window</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="nextTab">
+        <h3>
+          <code>nextTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Go one tab right</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="previousTab">
+        <h3>
+          <code>previousTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Go one tab left</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="removeTab">
+        <h3>
+          <code>removeTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Close current tab</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="restoreTab">
+        <h3>
+          <code>restoreTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Restore closed tab</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="setZoom">
+        <h3>
+          <code>setZoom</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Set zoom</p>
+        <p class="details"></p>
+        <div class="options">
+          <p><strong>Options</strong></p>
+          <ul><li><code>level</code>: The zoom level. This can be a range of [0.25, 5.0]. 1.0 is the default.</li></ul>
+        </div>
+      </div>
+    
+      <div class="command" data-command="toggleMuteTab">
+        <h3>
+          <code>toggleMuteTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Mute or unmute current tab</p>
+        <p class="details"></p>
+        <div class="options">
+          <p><strong>Options</strong></p>
+          <ul><li><code>all</code>: Mute all tabs.</li><li><code>other</code>: Mute every tab except the current one.</li></ul>
+        </div>
+      </div>
+    
+      <div class="command" data-command="togglePinTab">
+        <h3>
+          <code>togglePinTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Pin or unpin current tab</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="visitPreviousTab">
+        <h3>
+          <code>visitPreviousTab</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Go to previously-visited tab</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="zoomIn">
+        <h3>
+          <code>zoomIn</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Zoom in</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="zoomOut">
+        <h3>
+          <code>zoomOut</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Zoom out</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="zoomReset">
+        <h3>
+          <code>zoomReset</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Reset zoom</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <h2 id="misc" data-group="misc">Miscellaneous</h2>
+      <div class="command" data-command="showHelp">
+        <h3>
+          <code>showHelp</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Show help</p>
+        <p class="details"></p>
+        
+      </div>
+    
+      <div class="command" data-command="toggleViewSource">
+        <h3>
+          <code>toggleViewSource</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">View page source</p>
+        <p class="details"></p>
+        
+      </div>
+    
+    </main>
+
+    <template id="command">
+      <div class="command">
+        <h3>
+          <code>an-example-command</code>
+          <span class="key-bindings"></span>
+        </h3>
+        <p class="desc">Example description.</p>
+        <p class="details"></p>
+        <div class="options">
+          <p><strong>Options</strong></p>
+          <ul></ul>
+        </div>
+      </div>
+    </template>
+
+    <template id="keys">
+      <div class="key-block">
+        <span class="key"></span><span class="comma">,</span>
+      </div>
+    </template>
+  
+
+</body></html>
