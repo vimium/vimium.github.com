@@ -47,9 +47,13 @@ h3 {
   color: #696969;
 }
 
-a { color: #5173A7; }
+a {
+  color: #5173a7;
+}
 
-a:hover { color: black; }
+a:hover {
+  color: black;
+}
 
 #video {
   /* Prevent horizontal scrolling on phones. */
@@ -57,7 +61,6 @@ a:hover { color: black; }
 }
 
 @media (min-width: 700px) {
-
   ul {
     padding: 0;
     margin: 0;
@@ -106,11 +109,11 @@ footer {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #1E1F21;
-    color: #EEEFF1;
+    background-color: #1e1f21;
+    color: #eeeff1;
   }
   a {
-    color: #BAD7FF;
+    color: #bad7ff;
   }
   img#github {
     filter: invert(1);
@@ -123,6 +126,7 @@ footer {
   h3 {
     color: #999;
   }
-  a:hover { color: black; }
-
+  a:hover {
+    color: black;
+  }
 }

@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="./vimium_logo.svg">
-  <title>Vimium - The Hacker's Browser</title>
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./vimium_logo.svg">
+    <title>Vimium - The Hacker's Browser</title>
+  </head>
 
   <body>
     <header>
@@ -29,10 +26,16 @@
 
     <div id="video">
       <!-- rel=0 and showinfo=0 reduce the amount of player chrome that YouTube displays. -->
-      <iframe width="560" height="315"
+      <iframe
+        width="560"
+        height="315"
         src="https://www.youtube.com/embed/t67Sn0RGK54?si=JIw6PLFWqS7jx01e?&rel=0&showinfo=0"
-        title="Vimium" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        title="Vimium"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </div>
 
     <h2>Features</h2>
@@ -47,17 +50,17 @@
 
     <p id="install-links">
       Install for your browser:<br />
+      <a href="https://chromewebstore.google.com/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb"
+      >Chrome</a>
       <a
-        href="https://chromewebstore.google.com/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb">Chrome</a>
-      <a
-        href="https://microsoftedge.microsoft.com/addons/detail/vimium/djmieaghokpkpjfbpelnlkfgfjapaopa">Edge</a>
+        href="https://microsoftedge.microsoft.com/addons/detail/vimium/djmieaghokpkpjfbpelnlkfgfjapaopa"
+      >Edge</a>
       <a href="https://addons.mozilla.org/en-GB/firefox/addon/vimium-ff/">Firefox</a>
     </p>
 
-
     <h2 class="keyboard-shortcuts">Keyboard Shortcuts</h2>
     <div id="keyboard-shortcuts">
-      <div style="padding-right:2em">
+      <div style="padding-right: 2em">
         <h3>Navigating the page</h3>
         <ol>
           <li><span>j</span>Scroll down</li>
@@ -134,9 +137,13 @@
     </footer>
 
     <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost +
-        "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      var gaJsHost = ("https:" == document.location.protocol)
+        ? "https://ssl."
+        : "http://www.";
+      document.write(unescape(
+        "%3Cscript src='" + gaJsHost +
+          "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E",
+      ));
     </script>
     <script type="text/javascript">
       try {
@@ -144,7 +151,5 @@
         pageTracker._trackPageview();
       } catch (err) {}
     </script>
-
   </body>
-
 </html>
