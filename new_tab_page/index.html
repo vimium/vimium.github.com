@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:,">
+    <title>New Tab</title>
+
+    <style>
+      body {}
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #1d1d1f;
+          color: white;
+        }
+      }
+    </style>
+
+    <script>
+      async function registerServiceWorker() {
+        try {
+          await navigator.serviceWorker.register("./service_worker.js");
+        } catch (error) {
+          console.error("Service worker registration failed with error", error);
+        }
+      }
+
+      registerServiceWorker();
+    </script>
+  </head>
+
+  <body></body>
+</html>
