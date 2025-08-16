@@ -1,7 +1,8 @@
 // This service worker caches index.html, so that the page loads instantly and works offline.
 const pageHtml = `
 <!DOCTYPE html>
-<!-- This HTML must be kept in sync between index.html and service_worker.js -->
+<!-- This HTML must be kept in sync between index.html and service_worker.js. -->
+<!-- The repo containing this website is https://github.com/vimium/vimium.github.io -->
 <html>
   <head>
     <meta charset="UTF-8">
