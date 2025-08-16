@@ -7,6 +7,18 @@ const pageHtml = `
     <meta charset="UTF-8">
     <link rel="icon" href="data:,">
     <meta name="color-scheme" content="light dark">
+    <style type="text/css" media="screen">
+      body {
+        background-color: white;
+        color: black;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: black;
+          color: white;
+        }
+      }
+    </style>
     <title>New Tab</title>
   </head>
 
